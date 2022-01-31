@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="/css/login/conteudo.css">
+<section>
+    <div class="conteudo-principal">
+        <form action="/usuarios/login" method="post" class="formulario">
+            <h1>Login <span class="simbolo">$</span></h1>
+
+            <label for="usuario">Nome de Usuário</label>
+            <div>                     
+                <input type="text" name="usuario" id="usuario" class="customizar-input" placeholder="Nome de usuário" required>
+            </div>
+
+            <label for="senha">Senha</label>
+            <div>
+                <input type="password" name="senha" id="senha" class="customizar-input" placeholder="Senha" required>
+            </div>
+            <div class="esqueci_senha">
+                <span>Esqueceu sua senha? <a href="/usuarios/recuperar_senha">Clique aqui</a></span>
+            </div>
+            
+            <div class="form-rodape">
+                <button class="entrar" name="logar">Conectar-se</button>
+                <span>Não possui cadastro? <a href="/usuarios/registro">Clique aqui</a></span>
+            </div>
+        </form>
+    </div>
+</section>

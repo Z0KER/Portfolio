@@ -1,0 +1,54 @@
+.conteudo {
+    grid-area: conteudo;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.bloco {
+    border-top: 2px solid #B9B9B9;
+    border-bottom: 2px solid #B9B9B9;
+    border-radius: 40px;
+    padding: 30px;
+    text-align: center;
+    filter: brightness(80%);
+}
+
+.conteudo-principal-texto {
+    font-family: Fira;
+    font-size: 40px;
+    color: #fff;
+}
+
+.conteudo-principal-simbolo {
+    font-family: PiratesSailing;
+    font-size: 130px;
+    color: #8D7525;
+    filter: brightness(130%);
+}
+
+.conteudo-principal-botao {
+    font-family: Fira;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    padding: 18px;
+    background-color: #8d7525;
+    border: 2px solid #8d7525;
+    border-radius: 10px;
+}
+
+.conteudo-principal-botao:hover {
+    border-color: #D3AF3A;
+}
+
+.conteudo-principal-botao:active {
+    background-color: #5C4C18;
+}

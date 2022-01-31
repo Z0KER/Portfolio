@@ -1,0 +1,74 @@
+.conteudo {
+    grid-area: conteudo;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo-principal {
+    border: 2px solid #fff;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.formulario {
+    font-family: Fira;
+    font-size: 16px;
+    color: #fff;
+}
+
+.formulario > h1 {
+    text-align: center;
+    font-size: 50px;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.formulario > label {
+    padding-left: 3px;
+}
+
+.simbolo {
+    font-family: PiratesSailing;
+    color: #C4A234;
+    font-weight: normal;
+}
+
+.customizar-input {
+    width: 470px;
+    padding: 15px;
+    border: 1px solid #292d3b;
+    background-color: #0c0d11;
+    border-radius: 5px;
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.form-rodape {
+    text-align: center;
+    font-size: 18px;
+}
+
+.alterar {
+    font-family: Fira;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    padding: 14px;
+    background-color: #8d7525;
+    border: 2px solid #8d7525;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.alterar:hover {
+    border-color: #D3AF3A;
+}
+
+.alterar:active {
+    background-color: #5C4C18;
+}
