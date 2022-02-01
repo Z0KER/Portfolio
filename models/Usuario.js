@@ -40,12 +40,10 @@ const Usuario = new Schema({
         default: 0
     },
     codeAtivar: {
-        type: String,
-        unique: true
+        type: String
     },
     recuperarSenha: {
-        type: String,
-        unique: true
+        type: String
     },
     resetar: {
         type: Number

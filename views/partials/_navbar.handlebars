@@ -1,10 +1,26 @@
-{{#if user}}
-{{else}}
 <a class="cabecalho-titulo" href="index.php">PIRATES<span class="cabecalho-titulo-simbolo">*</span>SAILING</a>
-<nav class="cabecalho-menu">
-    <a class="cabecalho-menu-item" href="/">PÁGINA INICIAL</a>
-    <a class="cabecalho-menu-item" href="/about">SOBRE O JOGO</a>
-    <a class="cabecalho-menu-item" href="/usuarios/login">INICIAR SESSÃO</a>
-    <a class="cabecalho-menu-botao" href="/usuarios/registro">CADASTRAR AGORA</a>
-</nav>
+{{#if user}}
+    {{#isAdmin user}}
+        <nav class="cabecalho-menu">
+            <a href="/painel" class="cabecalho-menu-item">PAINEL</a>
+            <a href="/painel/controle" class="cabecalho-menu-item">CONTROLE</a>
+            <a href="" class="cabecalho-menu-item">CHAMADOS</a>
+            <a href="/usuarios/logout" class="cabecalho-menu-item">SAIR</a>
+        </nav>
+    {{else}}
+        <nav class="cabecalho-menu">
+            <a href="/painel" class="cabecalho-menu-item">PAINEL</a>
+            <a href="/painel/marketplace" class="cabecalho-menu-item">MARKETPLACE</a>
+            <a href="" class="cabecalho-menu-item">SUPORTE</a>
+            <a href="/usuarios/logout" class="cabecalho-menu-item">SAIR</a>
+            <a class="cabecalho-menu-botao" href="">JOGAR AGORA</a>
+        </nav>
+    {{/isAdmin}}
+{{else}}
+    <nav class="cabecalho-menu">
+        <a class="cabecalho-menu-item" href="/">PÁGINA INICIAL</a>
+        <a class="cabecalho-menu-item" href="/about">SOBRE O JOGO</a>
+        <a class="cabecalho-menu-item" href="/usuarios/login">INICIAR SESSÃO</a>
+        <a class="cabecalho-menu-botao" href="/usuarios/registro">CADASTRAR AGORA</a>
+    </nav>
 {{/if}}

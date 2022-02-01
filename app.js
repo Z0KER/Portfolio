@@ -9,6 +9,7 @@
     const session = require("express-session")
     const flash = require("connect-flash")
     const usuarios = require("./routes/usuario")
+    const painel = require("./routes/painel")
     const conf_email = require("./routes/conf_email")
     const passport = require("passport")
     require("./config/auth")(passport)
@@ -108,6 +109,7 @@
 
     app.use("/usuarios", usuarios)
     app.use("/conf_email", conf_email)
+    app.use("/painel", painel)
 
 // Outros
     const PORT = process.env.PORT || 8000

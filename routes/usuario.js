@@ -7,7 +7,6 @@ const bcrypt = require("bcryptjs")
 const passport = require("passport")
 const crypto = require("crypto")
 const nodemailer = require("nodemailer")
-const { logado } = require("../helper/logado")
 const { deslogado } = require("../helper/deslogado")
 const cron = require("node-cron")
 
@@ -138,6 +137,7 @@ const cron = require("node-cron")
         
                                             
                                         }).catch((err) => {
+                                            console.log(err)
                                             req.flash("error_msg", "Houve um erro ao cadastrar, tente novamente!")
                                             res.redirect("/usuarios/registro")
                                         })
@@ -161,7 +161,7 @@ const cron = require("node-cron")
 
     router.post("/login", deslogado, (req, res, next) => {
         passport.authenticate("local", {
-            successRedirect: "/usuarios/painel",
+            successRedirect: "/painel",
             failureRedirect: "/usuarios/login",
             failureFlash: true
         })(req, res, next)
@@ -302,12 +302,6 @@ const cron = require("node-cron")
                 }
             })
         }
-    })
-
-// Painel
-
-    router.get("/painel", logado, (req, res) => {
-        res.render("usuarios/painel")
     })
 
 module.exports = router
