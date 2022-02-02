@@ -10,6 +10,7 @@
     const flash = require("connect-flash")
     const usuarios = require("./routes/usuario")
     const painel = require("./routes/painel")
+    const suporte = require("./routes/suporte")
     const conf_email = require("./routes/conf_email")
     const passport = require("passport")
     require("./config/auth")(passport)
@@ -78,6 +79,13 @@
 
                         let dataMin = ano + '-' + mes + '-' + dia
                         return dataMin
+                    },
+
+                    ifCompare: function(n, p, options) {
+                        if(n == p) {
+                            return options.fn(this)
+                        }
+                        return options.inverse(this)
                     }
                 }
         })
@@ -103,13 +111,10 @@
         res.render("index")
     })
 
-    app.get("/about", deslogado, (req, res) => {
-        res.render("about/about")
-    })
-
     app.use("/usuarios", usuarios)
     app.use("/conf_email", conf_email)
     app.use("/painel", painel)
+    app.use("/suporte", suporte)
 
 // Outros
     const PORT = process.env.PORT || 8000

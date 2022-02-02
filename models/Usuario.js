@@ -31,6 +31,10 @@ const Usuario = new Schema({
         type: String,
         required: true
     },
+    nft: {
+        type: Schema.Types.ObjectId,
+        ref: "nfts"
+    },
     isAdmin: {
         type: Number,
         default: 0

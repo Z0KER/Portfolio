@@ -1,0 +1,42 @@
+.conteudo {
+    grid-area: conteudo;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+table {
+    border-collapse: collapse;
+    color: white;
+    width: 90%;
+    text-align: center;
+    font-family: Fira;
+    margin: 20px 0;
+}
+
+tr {
+    border: 1px solid rgb(124, 124, 124);
+    height: 50px;
+}
+
+td {
+    border: 1px solid rgb(124, 124, 124);
+    padding: 10px;
+}
+
+th {
+    padding: 10px;
+}
+
+.botao_fin {
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px;
+}

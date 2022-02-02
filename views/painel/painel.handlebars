@@ -1,0 +1,60 @@
+{{#isAdmin user}}
+<link rel="stylesheet" href="/css/painel/admin/conteudo.css">
+<section class="conteudo">
+    <div class="conteudo-principal">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome do NFT</th>
+                    <th>Tipo</th>
+                    <th>Raridade</th>
+                    <th>Poder</th>
+                    <th>Velocidade</th>
+                    <th>Resistência</th>
+                    <th>Vida</th>
+                </tr>   
+            </thead>
+            <tbody>
+                {{#each nfts}}  
+                    <tr>
+                        <td>{{nome}}</td>
+                        <td>{{#ifCompare tipo 1}}
+                            Navio
+                            {{else}}
+                            Tripulante
+                            {{/ifCompare}}
+                        </td>
+                        <td>{{#ifCompare raridade 1}}
+                            Comum
+                            {{else}}
+                                {{#ifCompare raridade 2}}
+                                Raro
+                                {{else}}
+                                    {{#ifCompare raridade 3}}
+                                    Super Raro
+                                    {{else}}
+                                        {{#ifCompare raridade 4}}
+                                        Lendário
+                                        {{else}}
+                                            {{#ifCompare raridade 5}}
+                                            Fantasma
+                                            {{else}}
+                                            {{/ifCompare}}
+                                        {{/ifCompare}}
+                                    {{/ifCompare}}
+                                {{/ifCompare}}                            
+                            {{/ifCompare}}
+                        </td>
+                        <td>{{poder}}</td>
+                        <td>{{velocidade}}</td>
+                        <td>{{resistencia}}</td>
+                        <td>{{vida}}</td>
+                    </tr>
+                {{else}}
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+</section>
+{{else}}
+{{/isAdmin}}

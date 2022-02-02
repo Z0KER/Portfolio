@@ -1,0 +1,99 @@
+<link rel="stylesheet" href="/css/painel/admin/criarNFT/conteudo.css">
+<section class="conteudo">
+    <div class="conteudo-principal">
+            <form action="/painel/criarNFT" method="post" class="formulario">
+                <h1>Criar NFT <span class="simbolo">$</span></h1>
+                <label for="nome">Nome</label>
+                <div>
+                    <input type="text" name="nome" id="nome" class="customizar-input" placeholder="Nome do NFT" required>
+                </div>
+
+                <label for="tipo">Tipo</label>
+                <div>                      
+                    <select name="tipo" id="tipo" class="customizar-input">
+                        <option value="1">Navio</option>
+                        <option value="2">Tripulante</option>
+                    </select>
+                </div>
+
+                <label for="raridade">Raridade</label>
+                <div>                      
+                    <select name="raridade" id="raridade" class="customizar-input">
+                        <option value="1">Comum</option>
+                        <option value="2">Raro</option>
+                        <option value="3">Super Raro</option>
+                        <option value="4">Lendário</option>
+                        <option value="5">Fantasma</option>
+                    </select>
+                </div>
+
+                <label for="vida">Vida</label>
+                <div>                      
+                    <select name="vida" id="vida" class="customizar-input">
+                        <option value="1000">1000 (HP)</option>
+                        <option value="2000">2000 (HP)</option>
+                        <option value="3000">3000 (HP)</option>
+                        <option value="4000">4000 (HP)</option>
+                        <option value="5000">5000 (HP)</option>
+                        <option value="6000">6000 (HP)</option>
+                        <option value="7000">7000 (HP)</option>
+                        <option value="8000">8000 (HP)</option>
+                        <option value="9000">9000 (HP)</option>
+                        <option value="10000">10000 (HP)</option>
+                    </select>
+                </div>
+
+                <label for="resistencia">Resistência</label>
+                <div>                      
+                    <select name="resistencia" id="resistencia" class="customizar-input">
+                        <option value="100">100 (DEF)</option>
+                        <option value="200">200 (DEF)</option>
+                        <option value="300">300 (DEF)</option>
+                        <option value="400">400 (DEF)</option>
+                        <option value="500">500 (DEF)</option>
+                        <option value="600">600 (DEF)</option>
+                        <option value="700">700 (DEF)</option>
+                        <option value="800">800 (DEF)</option>
+                        <option value="900">900 (DEF)</option>
+                        <option value="1000">1000 (DEF)</option>
+                    </select>
+                </div>
+
+                <label for="poder">Poder</label>
+                <div>                      
+                    <select name="poder" id="poder" class="customizar-input">
+                        <option value="100">100 (PWR)</option>
+                        <option value="200">200 (PWR)</option>
+                        <option value="300">300 (PWR)</option>
+                        <option value="400">400 (PWR)</option>
+                        <option value="500">500 (PWR)</option>
+                        <option value="600">600 (PWR)</option>
+                        <option value="700">700 (PWR)</option>
+                        <option value="800">800 (PWR)</option>
+                        <option value="900">900 (PWR)</option>
+                        <option value="1000">1000 (PWR)</option>
+                    </select>
+                </div>
+
+                <label for="velocidade">Velocidade</label>
+                <div>                      
+                    <select name="velocidade" id="velocidade" class="customizar-input">
+                        <option value="100">100 (SPD)</option>
+                        <option value="200">200 (SPD)</option>
+                        <option value="300">300 (SPD)</option>
+                        <option value="400">400 (SPD)</option>
+                        <option value="500">500 (SPD)</option>
+                        <option value="600">600 (SPD)</option>
+                        <option value="700">700 (SPD)</option>
+                        <option value="800">800 (SPD)</option>
+                        <option value="900">900 (SPD)</option>
+                        <option value="1000">1000 (SPD)</option>
+                    </select>
+                </div>
+                
+                <div class="form-rodape">
+                    <button class="criar" name="criar">Criar NTF</button>
+                </div>
+            </form>
+    </div>
+</section>
