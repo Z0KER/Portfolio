@@ -1,28 +1,38 @@
 .cabecalho {
-    grid-area: cabecalho;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-around;
-    padding: 12px;
-    background-color: #0c0d11;
-}
-
-.cabecalho-titulo {
-    font-family: PiratesSailing;
-    font-size: 30px;
-    color: #fff;
-}
-
-.cabecalho-titulo-simbolo {
-    color: #C4A234;
+    position: fixed;
+    width: 100%;
+    padding: 15px 80px;
+    background-color: #23252f7e;
 }
 
 .cabecalho-menu {
     display: flex;
     gap: 40px;
-    font-family: Fira;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
     font-size: 16px;
+}
+
+.perfil {
+    object-fit: cover;
+    width: 50px;
+    border-radius: 100%;
+}
+
+.cabecalho > a {
+    display: flex;
+}
+
+.cabecalho > a > span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    align-self: center;
+    color: #fff;
+    margin-left: 15px;
 }
 
 .cabecalho-menu-item {
@@ -34,19 +44,6 @@
     color: #fff;
 }
 
-.cabecalho-menu-botao {
-    font-weight: bold;
-    color: #fff;
-    padding: 18px;
-    background-color: #8d7525;
-    border: 2px solid #8d7525;
-    border-radius: 10px;
-}
-
-.cabecalho-menu-botao:hover {
-    border-color: #D3AF3A;
-}
-
-.cabecalho-menu-botao:active {
-    background-color: #5C4C18;
+.cor-menu {
+    color: #fff !important;
 }
