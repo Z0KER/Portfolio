@@ -47,3 +47,30 @@
 .cor-menu {
     color: #fff !important;
 }
+
+/* Cabeçalho Responsivo */
+    /* width 768px */
+         @media only screen and (max-width: 768px) {
+            .cabecalho {
+                padding: 15px 20px;
+            }
+        }
+    /* width 684px */
+        @media only screen and (max-width: 684px) {
+            .cabecalho {
+                padding: 15px 15px;
+            }
+            .cabecalho-menu {
+                gap: 30px;
+            }
+        }
+    /* width 639px */
+        @media only screen and (max-width: 639px) {
+            .cabecalho {
+                justify-content: center;
+                padding: 15px 0;
+            }
+            .cabecalho-menu {
+                display: none;
+            }
+        }

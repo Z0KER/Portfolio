@@ -9,3 +9,12 @@
     background-color: #23252F;
     padding: 50px;
 }
+
+/* responsivo */
+    /* width 639px */
+        @media only screen and (max-width: 639px) {
+            .rodape {
+                font-size: 13px;
+                padding: 50px;
+            }
+        }

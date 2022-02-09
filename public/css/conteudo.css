@@ -34,9 +34,60 @@
         font-size: 20px;
         font-weight: 600;
         margin: 30px 0;
-        text-align: center;
         font-family: Arial, Helvetica, sans-serif;
     }
+
+    .apr > p {
+        display: flex;
+        justify-content: center;
+    }
+
+    .botao-sobre {
+        display: flex;
+        padding: 15px 25px;
+        font-weight: 600;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        background-color: #6d59a8;
+        border-radius: 10px;
+        color: #fff;
+    }
+
+    /* Página Inicial Responsiva */
+        /* width 768px */
+            @media only screen and (max-width: 768px) {
+                .conteudo-principal-inicio {
+                    padding: 200px 0;
+                }
+                .apr_nome {
+                    font-size: 40px;
+                }
+                .apr {
+                    font-size: 17px;
+                    margin: 15px 0;
+                }
+            }
+        /* width 639px */
+            @media only screen and (max-width: 639px) {
+                .conteudo-principal-inicio{
+                    padding: 180px 0;
+                }
+                .apr_nome {
+                    font-size: 30px;
+                }
+                .apr {
+                    font-size: 15px;
+                }
+                .botao-sobre {
+                    font-size: 16px;
+                }
+            }
+        /* width 375px */
+            @media only screen and (max-width: 375px) {
+                .apr_nome {
+                    font-size: 25px;
+                }
+            }
 
 /* Sobre Mim */
 
@@ -47,16 +98,6 @@
         grid-template-areas: "foto sobreMim";
         padding-top: 200px;
         background-color: #1A1C23;
-    }
-
-    .botao-sobre {
-        padding: 15px 25px;
-        font-weight: 600;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 20px;
-        background-color: #6d59a8;
-        border-radius: 10px;
-        color: #fff;
     }
 
     .foto {
@@ -104,6 +145,7 @@
     }
 
     .baixar-cv {
+        display: flex;
         padding: 15px 25px;
         background-color: #6d59a8;
         border: none;
@@ -114,6 +156,66 @@
         font-weight: 600;
         color: #fff;
     }
+
+    /* Sobre Mim Responsivo */
+        /* width 768px */
+            @media only screen and (max-width: 768px) {
+                .foto-perfil {
+                    width: 320px;
+                }
+                .sobreMim {
+                    gap: 15px;
+                    padding-right: 25px;
+                }
+                .sobreMim > h1 {
+                    font-size: 25px;
+                }
+                .sobreMim > .texto {
+                    font-size: 17px;
+                }
+                .faculdade {
+                font-size: 14px;
+                }
+                .baixar-cv {
+                    font-size: 17px;
+                }
+            }
+        /* width 684px */
+            @media only screen and (max-width: 684px) {
+                .foto-perfil {
+                    width: 300px;
+                }
+            }
+        /* width 639px */
+            @media only screen and (max-width: 639px) {
+                .conteudo-principal-sobre {
+                    grid-template-columns: 1fr;
+                    grid-template-rows: repeat(2, 1fr);
+                    grid-template-areas: "foto" "sobreMim";
+                    padding-top: 100px;
+                }
+                .foto-perfil {
+                    width: 300px;
+                    margin-bottom: 20px;
+                }
+                .sobreMim {
+                    padding: 0 25px;
+                }
+                .sobreMim > h1 {
+                    font-size: 25px;
+                    align-self: center;
+                }
+                .sobreMim > .texto {
+                    font-size: 15px;
+                }
+                .faculdade {
+                    font-size: 14px;
+                }
+                .baixar-cv {
+                    align-self: center;
+                    font-size: 16px;
+                }
+            }
 
 /* Habilidades */
 
@@ -153,12 +255,14 @@
         background-image: linear-gradient(to right, #534480 80%, #cfcfcf 20%);
         border-radius: 5px;
         margin-right: 40px;
+        margin-left: 38px;
     }
 
     .hab-css {
         padding: 20px 150px;
         background-image: linear-gradient(to right, #534480 70%, #cfcfcf 30%);
         border-radius: 5px;
+        margin-left: 23px;
     }
 
     .hab-javascript {
@@ -172,6 +276,7 @@
         padding: 20px 150px;
         background-image: linear-gradient(to right, #534480 80%, #cfcfcf 20%);
         border-radius: 5px;
+        margin-left: 23px;
     }
 
     .hab-node {
@@ -179,12 +284,14 @@
         background-image: linear-gradient(to right, #534480 80%, #cfcfcf 20%);
         border-radius: 5px;
         margin-right: 40px;
+        margin-left: 24px;
     }
 
     .hab-java {
         padding: 20px 150px;
         background-image: linear-gradient(to right, #534480 65%, #cfcfcf 35%);
         border-radius: 5px;
+        margin-left: 23px;
     }
 
     .hab-sql {
@@ -192,12 +299,14 @@
         background-image: linear-gradient(to right, #534480 65%, #cfcfcf 35%);
         border-radius: 5px;
         margin-right: 40px;
+        margin-left: 51px;
     }
 
     .hab-nosql {
         padding: 20px 150px;
         background-image: linear-gradient(to right, #534480 65%, #cfcfcf 35%);
         border-radius: 5px;
+        margin-left: 1px;
     }
 
     .hab-bootstrap {
@@ -205,14 +314,127 @@
         background-image: linear-gradient(to right, #534480 55%, #cfcfcf 45%);
         border-radius: 5px;
         margin-right: 40px;
+        margin-left: 4px;
     }
 
     .hab-jquery {
         padding: 20px 150px;
         background-image: linear-gradient(to right, #534480 55%, #cfcfcf 45%);
         border-radius: 5px;
+        margin-left: 9px;
     }
 
+    .habilidades-respons {
+        display: none;
+    }
+
+    /* Habilidades Responsivo */
+        /* width 768px */
+            @media only screen and (max-width: 768px) {
+                .conteudo-principal-hab > h1 {
+                    font-size: 25px;
+                }
+                .habilidades {
+                    width: 688px;
+                }
+                .conteudo-principal-hab > .habilidades > span {
+                    font-size: 17px;
+                }
+                .hab-html, .hab-css, .hab-javascript, .hab-php, .hab-node, .hab-java, .hab-sql, .hab-nosql, .hab-jquery, .hab-bootstrap {
+                    padding: 20px 110px;
+                }
+            }
+        /* width 684px */
+            @media only screen and (max-width: 684px) {
+                .habilidades {
+                    width: 628px;
+                }
+                .hab-html, .hab-css, .hab-javascript, .hab-php, .hab-node, .hab-java, .hab-sql, .hab-nosql, .hab-jquery, .hab-bootstrap {
+                    padding: 20px 95px;
+                }
+            }
+        /* width 639px */
+            @media only screen and (max-width: 639px) {
+                .conteudo-principal-hab {
+                    padding: 100px 0;
+                }
+
+                .habilidades {
+                    display: none;
+                }
+                
+                .habilidades-respons {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    width: 395px;
+                    padding-left: 20px;
+                }
+
+                .r-html {
+                    gap: 21px;
+                }
+
+                .r-css {
+                   gap: 52px; 
+                }
+
+                .r-js {
+                    gap: 25px;
+                }
+
+                .r-php {
+                    gap: 52px;
+                }
+
+                .r-node {   
+                    gap: 26px;
+                }
+
+                .r-java {
+                    gap: 50px;
+                }
+
+                .r-sql {
+                    gap: 26px;
+                }
+
+                .r-nosql {
+                    gap: 53px;
+                }
+
+                .r-boot {
+                    gap: 28px;
+                }
+
+                .r-jq {
+                    gap: 51px;
+                }
+
+                
+                .conteudo-principal-hab > h1 {
+                    font-size: 25px;
+                }
+                
+                .conteudo-principal-hab > .habilidades-respons > span {
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 18px;
+                    color: #fff;
+                }
+
+                .hab-html, .hab-css, .hab-javascript, .hab-php, .hab-node, .hab-java, .hab-sql, .hab-nosql, .hab-jquery, .hab-bootstrap {
+                    padding: 20px 120px;
+                }
+            }
+        /* width 375px */
+            @media only screen and (max-width: 375px) {
+                .habilidades-respons {
+                    width: 376px;
+                }
+                .hab-html, .hab-css, .hab-javascript, .hab-php, .hab-node, .hab-java, .hab-sql, .hab-nosql, .hab-jquery, .hab-bootstrap {
+                    padding: 20px 110px;
+                }
+            }
 /* Contato */
 
     .conteudo-principal-contato {
@@ -230,7 +452,7 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 1fr;
-        grid-template-areas: "contato-texto contato-info";
+        grid-template-areas: "contato-info contato-texto";
     }
 
     .conteudo-principal-contato > h1 {
@@ -240,6 +462,7 @@
     }
 
     .contato-texto {
+        grid-area: contato-texto;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -256,6 +479,7 @@
     }
 
     .contato-info {
+        grid-area: contato-info;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -264,6 +488,7 @@
     }
 
     .contato-info > h1 {
+        display: flex;
         color: #fff;
         font-size: 25px;
         font-family: Arial, Helvetica, sans-serif;
@@ -271,6 +496,7 @@
     }
 
     .contato-info > p {
+        display: flex;
         color: #fff;
         font-size: 18px;
         font-family: Arial, Helvetica, sans-serif;
@@ -289,6 +515,7 @@
     }
 
     .btn-contato {
+        display: flex;
         padding: 15px 25px;
         background-color: #6d59a8;
         border: none;
@@ -299,3 +526,83 @@
         color: #fff;
         align-self: flex-start;
     }
+
+    /* Contato Responsivo */
+        /* width 768px */
+            @media only screen and (max-width: 768px) {
+                .conteudo-principal-contato {
+                    padding: 150px 0 50px 0;
+                }
+                .conteudo-principal-contato > h1 {
+                    font-size: 25px;
+                }
+                .contato-info {
+                    gap: 10px;
+                    justify-content: flex-start;
+                }
+                .contato-info > h1 {
+                    font-size: 20px;
+                    padding-left: 20px;
+                }
+                .contato-info > p {
+                    font-size: 17px;
+                    padding: 0 20px;
+                }
+                .contato-texto > p {
+                    font-size: 17.5px;
+                    padding-right: 20px;
+                }
+                .endereco{
+                    font-size: 13.5px;
+                }
+                .btn-contato {
+                    font-size: 17px;
+                }
+            }
+        /* width 639px */
+            @media only screen and (max-width: 639px) {
+                .conteudo-principal-contato {
+                    padding: 100px 0 0 0;
+                    gap: 0px;
+                }
+
+                .conteudo-principal-contato > h1 {
+                    font-size: 25px;
+                }
+
+                .grid-contato {
+                    grid-template-columns: 1fr;
+                    grid-template-rows: repeat(2, 1fr);
+                    grid-template-areas: "contato-info" "contato-texto";
+                }
+
+                .contato-info {
+                    gap: 10px;
+                    justify-content: center;
+                }
+
+                .contato-info > h1 {
+                    font-size: 19px;
+                    padding-left: 25px;
+                }
+
+                .contato-info > p {
+                    font-size: 15px;
+                    padding: 0 25px;
+                }
+
+                .contato-texto > p {
+                    font-size: 16px;
+                    padding: 0 25px;
+                }
+
+                .endereco {
+                    padding: 0 25px;
+                    font-size: 14px;
+                }
+
+                .btn-contato {
+                    font-size: 16px;
+                    align-self: center;
+                }
+            }
