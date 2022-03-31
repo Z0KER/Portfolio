@@ -238,11 +238,18 @@
     }
 
     .habilidades {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 25px;
-        width: 871px;
+        text-align: left;
+    }
+
+    .hab-format {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        color: white;
+        padding: 25px;
+    }
+
+    .hab-space-left {
+        padding-left: 0;
     }
 
     .conteudo-principal-hab > .habilidades > span {
@@ -255,74 +262,60 @@
         padding: 20px 150px;
         background-image: linear-gradient(to right, #534480 80%, #cfcfcf 20%);
         border-radius: 5px;
-        margin-right: 40px;
-        margin-left: 38px;
     }
 
     .hab-css {
         padding: 20px 150px;
         background-image: linear-gradient(to right, #534480 70%, #cfcfcf 30%);
         border-radius: 5px;
-        margin-left: 23px;
     }
 
     .hab-javascript {
         padding: 20px 150px;
         background-image: linear-gradient(to right, #534480 70%, #cfcfcf 30%);
         border-radius: 5px;
-        margin-right: 40px;
     }
 
     .hab-php {
         padding: 20px 150px;
         background-image: linear-gradient(to right, #534480 80%, #cfcfcf 20%);
         border-radius: 5px;
-        margin-left: 23px;
     }
 
     .hab-node {
         padding: 20px 150px;
         background-image: linear-gradient(to right, #534480 80%, #cfcfcf 20%);
         border-radius: 5px;
-        margin-right: 40px;
-        margin-left: 24px;
     }
 
     .hab-java {
         padding: 20px 150px;
         background-image: linear-gradient(to right, #534480 65%, #cfcfcf 35%);
         border-radius: 5px;
-        margin-left: 23px;
     }
 
     .hab-sql {
         padding: 20px 150px;
         background-image: linear-gradient(to right, #534480 65%, #cfcfcf 35%);
         border-radius: 5px;
-        margin-right: 40px;
-        margin-left: 51px;
     }
 
     .hab-nosql {
         padding: 20px 150px;
         background-image: linear-gradient(to right, #534480 65%, #cfcfcf 35%);
         border-radius: 5px;
-        margin-left: 1px;
     }
 
     .hab-bootstrap {
         padding: 20px 150px;
         background-image: linear-gradient(to right, #534480 55%, #cfcfcf 45%);
         border-radius: 5px;
-        margin-right: 40px;
-        margin-left: 4px;
     }
 
     .hab-jquery {
         padding: 20px 150px;
         background-image: linear-gradient(to right, #534480 55%, #cfcfcf 45%);
         border-radius: 5px;
-        margin-left: 9px;
     }
 
     .habilidades-respons {
@@ -335,10 +328,7 @@
                 .conteudo-principal-hab > h1 {
                     font-size: 25px;
                 }
-                .habilidades {
-                    width: 680px;
-                }
-                .conteudo-principal-hab > .habilidades > span {
+                .hab-format {
                     font-size: 14px;
                 }
                 .hab-html, .hab-css, .hab-javascript, .hab-php, .hab-node, .hab-java, .hab-sql, .hab-nosql, .hab-jquery, .hab-bootstrap {
@@ -347,11 +337,11 @@
             }
         /* width 684px */
             @media only screen and (max-width: 684px) {
-                .habilidades {
-                    width: 628px;
-                }
                 .hab-html, .hab-css, .hab-javascript, .hab-php, .hab-node, .hab-java, .hab-sql, .hab-nosql, .hab-jquery, .hab-bootstrap {
                     padding: 20px 95px;
+                }
+                .habilidades-respons {
+                    display: none;
                 }
             }
         /* width 639px */
@@ -365,11 +355,13 @@
                 }
                 
                 .habilidades-respons {
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
-                    width: 395px;
-                    padding-left: 20px;
+                    display: block;
+                    text-align: left;
+                }
+
+                .hab-format {
+                    padding-left: 0;
+                    font-size: 18px;
                 }
 
                 .r-html {

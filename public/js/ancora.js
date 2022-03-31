@@ -55,12 +55,12 @@ $(function() {
             } else {
                 $(".sobre").removeClass("cor-menu");
             }
-            if($(window).scrollTop() > 1139 && $(window).scrollTop() < 1819) {
+            if($(window).scrollTop() > 1139 && $(window).scrollTop() < 1801) {
                 $(".hab").addClass("cor-menu");
             } else {
                 $(".hab").removeClass("cor-menu");
             }
-            if($(window).scrollTop() > 1818) {
+            if($(window).scrollTop() > 1800) {
                 $(".contato").addClass("cor-menu");
             } else {
                 $(".contato").removeClass("cor-menu");
