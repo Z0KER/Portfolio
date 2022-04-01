@@ -5,9 +5,13 @@ $('.cabecalho-menu-item').click(function() {
     }, 1000);
     return false;
 });
-
-var $doc = $('html, body');
 $('.botao-sobre').click(function() {
+    $doc.animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 1000);
+    return false;
+});
+$('.link-perfil').click(function() {
     $doc.animate({
         scrollTop: $( $.attr(this, 'href') ).offset().top
     }, 1000);
