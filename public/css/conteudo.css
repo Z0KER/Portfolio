@@ -409,10 +409,8 @@
                     font-size: 25px;
                 }
                 
-                .conteudo-principal-hab > .habilidades-respons > span {
-                    font-family: Arial, Helvetica, sans-serif;
+                .hab-format {
                     font-size: 18px;
-                    color: #fff;
                 }
 
                 .hab-html, .hab-css, .hab-javascript, .hab-php, .hab-node, .hab-java, .hab-sql, .hab-nosql, .hab-jquery, .hab-bootstrap {
@@ -421,11 +419,8 @@
             }
         /* width 375px */
             @media only screen and (max-width: 375px) {
-                .habilidades-respons {
-                    width: 376px;
-                }
-                .hab-html, .hab-css, .hab-javascript, .hab-php, .hab-node, .hab-java, .hab-sql, .hab-nosql, .hab-jquery, .hab-bootstrap {
-                    padding: 20px 110px;
+                .hab-format {
+                    font-size: 14px;
                 }
             }
 /* Contato */
