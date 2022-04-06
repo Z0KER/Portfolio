@@ -318,6 +318,12 @@
         border-radius: 5px;
     }
 
+    .hab-vue {
+        padding: 20px 150px;
+        background-image: linear-gradient(to right, #534480 65%, #cfcfcf 35%);
+        border-radius: 5px;
+    }
+
     .habilidades-respons {
         display: none;
     }
