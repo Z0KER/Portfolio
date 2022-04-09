@@ -337,13 +337,13 @@
                 .hab-format {
                     font-size: 14px;
                 }
-                .hab-html, .hab-css, .hab-javascript, .hab-php, .hab-node, .hab-java, .hab-sql, .hab-nosql, .hab-jquery, .hab-bootstrap {
+                .hab-html, .hab-css, .hab-javascript, .hab-php, .hab-node, .hab-java, .hab-sql, .hab-nosql, .hab-jquery, .hab-bootstrap, .hab-vue {
                     padding: 20px 110px;
                 }
             }
         /* width 684px */
             @media only screen and (max-width: 684px) {
-                .hab-html, .hab-css, .hab-javascript, .hab-php, .hab-node, .hab-java, .hab-sql, .hab-nosql, .hab-jquery, .hab-bootstrap {
+                .hab-html, .hab-css, .hab-javascript, .hab-php, .hab-node, .hab-java, .hab-sql, .hab-nosql, .hab-jquery, .hab-bootstrap, .hab-vue {
                     padding: 20px 95px;
                 }
                 .habilidades-respons {
@@ -369,47 +369,6 @@
                     padding-left: 0;
                     font-size: 18px;
                 }
-
-                .r-html {
-                    gap: 21px;
-                }
-
-                .r-css {
-                   gap: 52px; 
-                }
-
-                .r-js {
-                    gap: 25px;
-                }
-
-                .r-php {
-                    gap: 52px;
-                }
-
-                .r-node {   
-                    gap: 26px;
-                }
-
-                .r-java {
-                    gap: 50px;
-                }
-
-                .r-sql {
-                    gap: 26px;
-                }
-
-                .r-nosql {
-                    gap: 53px;
-                }
-
-                .r-boot {
-                    gap: 28px;
-                }
-
-                .r-jq {
-                    gap: 51px;
-                }
-
                 
                 .conteudo-principal-hab > h1 {
                     font-size: 25px;
@@ -419,7 +378,7 @@
                     font-size: 18px;
                 }
 
-                .hab-html, .hab-css, .hab-javascript, .hab-php, .hab-node, .hab-java, .hab-sql, .hab-nosql, .hab-jquery, .hab-bootstrap {
+                .hab-html, .hab-css, .hab-javascript, .hab-php, .hab-node, .hab-java, .hab-sql, .hab-nosql, .hab-jquery, .hab-bootstrap, .hab-vue {
                     padding: 20px 120px;
                 }
             }
